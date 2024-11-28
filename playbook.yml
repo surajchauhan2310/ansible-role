@@ -1,0 +1,9 @@
+
+# playbook.yml
+---
+- name: Install and configure Nginx web server
+  hosts: all
+  become: yes  # Run tasks with sudo privileges
+  roles:
+    - nginx
+
